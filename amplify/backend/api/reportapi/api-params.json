@@ -1,0 +1,56 @@
+{
+    "paths": [
+        {
+            "name": "/send-now",
+            "lambdaFunction": "reportmain",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/set-interval",
+            "lambdaFunction": "reportmain",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/download",
+            "lambdaFunction": "reportmain",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/schedule-email",
+            "lambdaFunction": "reportmain",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "reportapi",
+    "apiName": "reportapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "reportmain"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-reportscheduler-dev-205841-authRole",
+        "unAuthRoleName": "amplify-reportscheduler-dev-205841-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "reportmain",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "21f9d3ab"
+}

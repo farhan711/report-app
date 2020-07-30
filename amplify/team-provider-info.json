@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-reportscheduler-dev-205841-authRole",
+            "UnauthRoleArn": "arn:aws:iam::639695405324:role/amplify-reportscheduler-dev-205841-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::639695405324:role/amplify-reportscheduler-dev-205841-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-reportscheduler-dev-205841-deployment",
+            "UnauthRoleName": "amplify-reportscheduler-dev-205841-unauthRole",
+            "StackName": "amplify-reportscheduler-dev-205841",
+            "StackId": "arn:aws:cloudformation:us-east-1:639695405324:stack/amplify-reportscheduler-dev-205841/c653ff10-a8d7-11ea-8c5a-0e1c7f65113d",
+            "AmplifyAppId": "d354qlh6nkfevg"
+        }
+    }
+}

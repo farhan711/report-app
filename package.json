@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.2.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -10,16 +11,30 @@
     "@types/node": "^12.12.44",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "antd": "^4.3.1",
+    "aws-amplify": "^3.0.16",
+    "customize-cra": "^1.0.0",
+    "file-saver": "^2.0.2",
+    "framer-motion": "^1.11.0",
+    "moment": "^2.26.0",
     "react": "^16.13.1",
+    "react-app-rewire-mobx": "^1.0.9",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "^3.7.5"
+    "recoil": "0.0.8",
+    "typescript": "^3.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deps:reportmain": "cd amplify/backend/function/reportmain/src/ && rm -rf node_modules && rm -rf package-lock.json && npm i && cd ../../../../../",
+    "deps:cloudwatchLambda": "cd amplify/backend/function/cloudwatchLambda/src/ && rm -rf node_modules && rm -rf package-lock.json && npm i && cd ../../../../../",
+    "deps:scheduledMailSenderLambda": "cd amplify/backend/function/scheduledMailSenderLambda/src/ && rm -rf node_modules && rm -rf package-lock.json && npm i && cd ../../../../../",
+    "deps:sqsConsumerLambda": "cd amplify/backend/function/sqsConsumerLambda/src/ && rm -rf node_modules && rm -rf package-lock.json && npm i && cd ../../../../../",
+    "install:all": "npm i && npm run deps:reportmain && npm run deps:cloudwatchLambda && npm run deps:scheduledMailSenderLambda && npm run deps:sqsConsumerLambda && npm run deps:sqsConsumerLambda"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1"
   }
 }

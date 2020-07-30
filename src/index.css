@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header-shadow {
+  -webkit-box-shadow:  0 2px 8px #f0f1f2;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:  0 2px 8px #f0f1f2;    /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.w-75 {
+  width: 75%;
+}

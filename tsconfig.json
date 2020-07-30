@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -19,6 +20,7 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "files": ["src/types.d.ts"],
   "include": [
     "src"
   ]

@@ -1,0 +1,22 @@
+{
+  "name": "reportmain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.691.0",
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^3.5.8",
+    "nodemailer": "^6.4.8",
+    "uuid": "^8.1.0",
+    "xlsx": "^0.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
