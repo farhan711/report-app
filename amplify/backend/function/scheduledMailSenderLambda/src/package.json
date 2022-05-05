@@ -7,7 +7,7 @@
   "dependencies": {
     "aws-sdk": "^2.691.0",
     "mongodb": "^3.5.8",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.6.1",
     "xlsx": "^0.16.2"
   }
 }
